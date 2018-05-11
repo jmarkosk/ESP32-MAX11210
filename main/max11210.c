@@ -89,7 +89,7 @@ void MAX11210_init(void){
 
 	MAX11210_send_command(POWER_DOWN,1);
 
-	vTaskDelay(200 / portTICK_PERIOD_MS);
+	vTaskDelay(300 / portTICK_PERIOD_MS);
 
 
 	

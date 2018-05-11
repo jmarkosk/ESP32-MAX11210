@@ -1,0 +1,4 @@
+git remote add origin https://github.com/jmarkosk/ESP32-MAX11210.git
+git push -u origin master
+
+ jmarkosk@users.noreply.github.com
