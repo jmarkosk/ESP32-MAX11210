@@ -1,7 +1,20 @@
 {
-    "C_Cpp.intelliSenseEngineFallback": "Disabled",
     "files.associations": {
-        "freertos.h": "c",
-        "sdkconfig.h": "c"
-    }
+        "gpio.h": "c",
+        "spi_master.h": "c",
+        "task.h": "c",
+        "byteswap.h": "c"
+    },
+    "symbolOutline.doSort": true,
+    "terminal.integrated.shell.windows": "C:/msys32/usr/bin/bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "--login",
+    ],
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1",
+        "MSYSTEM": "MINGW32",
+    },
+
+
+
 }

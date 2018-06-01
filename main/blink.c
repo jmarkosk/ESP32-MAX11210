@@ -13,13 +13,14 @@
 #include "driver/spi_master.h"
 #include "esp_log.h"
 #include "max11210.h"
+#include "board_config.h"
 
 #include "sdkconfig.h"
 
 /* Can run 'make menuconfig' to choose the GPIO to blink,
    or you can edit the following line and set a number here.
 */
-#define BLINK_GPIO 2
+
 #define SHIFT	5
 #define AV_RATE	10
 
@@ -256,7 +257,7 @@ void app_main()
 				 10,                        //task priority
 				 NULL);                    //task handel
 
-
+/*
     xTaskCreate(&spi_task,               //Pointer to the function of the task (function pointer)
     		    "spi_task",              //Debug task name
 				 2048,                   //Stack size
@@ -271,5 +272,5 @@ void app_main()
 				 4,                      //task priority
 				 NULL);                  //task handel
 
-
+*/
 }

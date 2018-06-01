@@ -17,6 +17,7 @@
 #include "driver/gpio.h"
 #include "driver/spi_master.h"
 #include "esp_log.h"
+#include "board_config.h"
 
 /* Includes ------------------------------------------------------------------*/
 //#include "stm32l1xx.h"
@@ -27,11 +28,21 @@
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
-#define csPin   15 // MISO
+/*
+#ifdef BOARD_BANGOOD_DEVKIT
+#define csPin   5 // csPin
+#define clkPin  18// CLK
+#define mosiPin 23// MOSI
+#define misoPin 19 // MISO
+#endif
+
+#ifdef BOARD_ESPRESSIF_WROVER_DEVKIT
+#define csPin   15 // csPin
 #define clkPin  14// CLK
 #define mosiPin 13// MOSI
 #define misoPin 12 // MISO
-
+#endif
+*/
 
 #define	MAX11210_SPI_BANK		NotUSED
 #define	MAX11210_SPI_NSS		csPin
